@@ -36,7 +36,7 @@ if let name = optionalName {
     greeting = "Hello, \(name)"
 } else {
     print("No name here.")
-}
+} 
 
 // Experiment 5 - Try removing the default case. What error do you get?
 // Error - "Switch must be exhaustive"
