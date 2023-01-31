@@ -36,7 +36,7 @@ if let name = optionalName {
     greeting = "Hello, \(name)"
 } else {
     print("No name here.")
-} 
+}
 
 // Experiment 5 - Try removing the default case. What error do you get?
 // Error - "Switch must be exhaustive"
@@ -52,3 +52,34 @@ case let x where x.hasSuffix("pepper"):
 default:
     print("Everything tastes good in soup.")
 }
+
+// Experiment 6 - Replace the _ with a variable name, and keep track of which kind of number was the largest
+
+let interestingNumbers = [
+    
+    "Prime": [2,3,5,7,11,13],
+    "Fibonacci": [1, 1, 2, 3, 5, 8],
+    "Square": [1,4,9,16,25],
+]
+
+var largest = 0
+
+for (_, numbers) in interestingNumbers {
+    for number in numbers {
+        print(number)
+        if number > largest {
+            largest = number
+        }
+    }
+}
+print(largest)
+
+// Experiment 5 - Remove the day parameter. Add a parameter to include today's lunch special in the greeting
+
+func greet(person: String, lunchSpecial: String) -> String {
+    return "Hello \(person), today's lunch special is \(lunchSpecial)."
+}
+
+let special = greet(person: "Bob", lunchSpecial: "potatoes")
+print(special)
+
