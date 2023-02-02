@@ -83,4 +83,26 @@ func greet(person: String, lunchSpecial: String) -> String {
 let special = greet(person: "Bob", lunchSpecial: "potatoes")
 print(special)
  
-let
+// Experiment 6 - Add a constant with let, and add another method that takes an argument
+
+class Shape {
+    var numberOfSides = 0
+    func simpleDescription() -> String {
+        return "A shape with \(numberOfSides)"
+    }
+    var shapeColor: String
+    
+    init(shapeColor: String) {
+        self.shapeColor = shapeColor
+    }
+    func changeShapeColor(color: String) -> String {
+        print("The color of the space was \(shapeColor)")
+        shapeColor = color
+        return "The color of the shape is now \(color)"
+    }
+    
+}
+
+var testShape = Shape(shapeColor: "yellow")
+print(testShape.changeShapeColor(color: "green"))
+
