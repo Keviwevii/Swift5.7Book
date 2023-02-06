@@ -106,5 +106,34 @@ class Shape {
 var testShape = Shape(shapeColor: "yellow")
 print(testShape.changeShapeColor(color: "green"))
 
-let
-let
+// Experiment 7 Adda acolor() method to Suit that returns "black" for spades and clubs, and returns "red" for hearts and diamonds
+
+enum Suit {
+    case spades, hearts, diamonds, clubs
+    
+    func simpleDeclaration() -> String {
+        switch self {
+        case .spades:
+            return "spades"
+        case .hearts:
+            return "hearts"
+        case .diamonds:
+            return "diamonds"
+        case .clubs:
+            return "clubs"
+        }
+    }
+    
+    func color(_ color: String) -> String {
+        if color == "spades" || color == "clubs" {
+            return "black"
+        } else {
+            return "red"
+        }
+    }
+}
+
+let hearts = Suit.hearts
+let heartsDescription = hearts.simpleDeclaration()
+let heartsColor = hearts.color(heartsDescription)
+print(heartsColor)
