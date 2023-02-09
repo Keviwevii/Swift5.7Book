@@ -40,3 +40,16 @@ friendlyWelcome = "Bonjour!"
 let languageName = "Swift"
 // languageName = "Swift++" will through an error
 
+//You can print the current value of a constant or variable with the print function
+
+print(friendlyWelcome)
+
+// You can use string interpolation in Swift to include the name of a constant or variable as a placeholder and this lets swift know to replace it with the current value
+
+print("The current value of friendlyWelcome is \(friendlyWelcome)")
+
+//Single line comments are made with two forward slashes
+/* Multi Line comments are made with a forward slash and an asterisk
+ Like this */
+
+//Semicolons are optional in Swift unless you are writing mutiple statements on a line
