@@ -53,3 +53,5 @@ print("The current value of friendlyWelcome is \(friendlyWelcome)")
  Like this */
 
 //Semicolons are optional in Swift unless you are writing mutiple statements on a line
+
+// Integers are whole numbers with no fractional component, such as 42, and -23. The integer type is Int
