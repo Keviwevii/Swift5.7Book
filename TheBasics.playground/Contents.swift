@@ -55,3 +55,32 @@ print("The current value of friendlyWelcome is \(friendlyWelcome)")
 //Semicolons are optional in Swift unless you are writing mutiple statements on a line
 
 // Integers are whole numbers with no fractional component, such as 42, and -23. The integer type is Int
+
+// Floating point number are numbers with a fractional compenent
+
+var floatingPointExample = 3.14159
+
+// Double represents a 64-bit floating-point number.
+// Float represents a 32-bit floating point number.
+
+//Type Safety and Type Inference
+// Because swift is type safe, it performs type checks when compiling your code and flags any mismatched types as errors. this enables you to catch and fix errors as early as possible in the development process
+
+let meaningOfLife = 42
+// meaningOfLife is inferred to be of type Int
+
+let pi 3.14159
+// pi is inferred to be of type Double, Swift always chooses Double (rather than Float) when inferring the type of floating-point numbers
+
+//If you combine integer and floating-point literals in an expression, a type of Double is inferred from the context:
+let anotherPi = 3 + 0.14159
+// anotherPi is also inferred to be of type Double
+
+//Numeric literals can contain extra formatting to make them easier to read. Both integers and floats can be padded with extra zeros and can contain underscores to help with readability.
+let paddedDouble = 000123.456
+let oneMillion = 1_000_000
+let justOverOneMillion = 1_000_000.000_000_1
+
+
+
+
