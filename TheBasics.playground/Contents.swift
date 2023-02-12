@@ -69,8 +69,8 @@ var floatingPointExample = 3.14159
 let meaningOfLife = 42
 // meaningOfLife is inferred to be of type Int
 
-let pi 3.14159
-// pi is inferred to be of type Double, Swift always chooses Double (rather than Float) when inferring the type of floating-point numbers
+let piEx = 3.14159
+// piEx is inferred to be of type Double, Swift always chooses Double (rather than Float) when inferring the type of floating-point numbers
 
 //If you combine integer and floating-point literals in an expression, a type of Double is inferred from the context:
 let anotherPi = 3 + 0.14159
@@ -81,6 +81,28 @@ let paddedDouble = 000123.456
 let oneMillion = 1_000_000
 let justOverOneMillion = 1_000_000.000_000_1
 
+//Integer and Floating-Point Conversion
+//Conversions between integer and floating-point numeric types must be made explicit
+
+let three = 3
+let pointOneFourOneFiveNine = 0.14159
+let pi = Double(three) + pointOneFourOneFiveNine
+// pi equals 3.14159, and is inferred to be of type Double
+
+//Booleans
+//Swift has a basic Boolean type, called Bool. Boolean values are referred to as logical, because they can only ever be true or false
+
+let orangesAreOrange = true
+let turnipsAreDelicious = false
+
+// Boolean values are particulary useful when you work with conditional statements such as the if statment:
+
+if turnipsAreDelicious {
+    print("Hmm, tasty turnips!")
+} else {
+    print("Eww, turnips are horrible.")
+}
+// Prints "Eww, turnips are hottible."
 
 
 
