@@ -104,5 +104,6 @@ if turnipsAreDelicious {
 }
 // Prints "Eww, turnips are hottible."
 
-
+// Tuples
+// Tuples grouop multiple values into a single coupound value. The value within a tuple can be of any type and don't have to be of the same type as each other.
 
