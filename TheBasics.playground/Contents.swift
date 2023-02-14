@@ -105,5 +105,36 @@ if turnipsAreDelicious {
 // Prints "Eww, turnips are hottible."
 
 // Tuples
-// Tuples grouop multiple values into a single coupound value. The value within a tuple can be of any type and don't have to be of the same type as each other.
+// Tuples group multiple values into a single coupound value. The value within a tuple can be of any type and don't have to be of the same type as each other.
+
+let http404Error = (404, "Not Found")
+// http404Error is of type (Int, String), and equals (404, "Not Found")
+
+// You can decompose a tuple's contents into seperate constants or variables, which you then access as usual:
+
+let (statusCode, statusMessage) = http404Error
+
+print("The status code is \(statusCode)")
+print("The status message is \(statusMessage)")
+
+// If you only need some of the tuple's values, ignore parts of the tuple with an underscore(_) when you decompose the tuple:
+
+let (justTheStatusCode, _) = http404Error
+print("The status code is \(justTheStatusCode)")
+
+//Alternatively, access the individual element values in a tuple using index numbers starting at zaro:
+
+print("The status code is \(http404Error.0)")
+// Prints "The status code is 404"
+
+// You can name the individual elements in a tuple when the tuple is defined:
+
+let http200Status = (statusCode: 200, description: "Ok")
+
+// If you name the elemtns in a tuple, you can use the element anmes to access the values of those elements
+
+print("The status code is \(http200Status.statusCode)")
+print("The status code is \(http200Status.description)")
+
+//Tuples are particulary useful as the return values of functions
 
