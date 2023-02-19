@@ -141,4 +141,8 @@ print("The status code is \(http200Status.description)")
 // Optionals
 // You use optionals in situations where a value may be absent. An optional represents two possibilities. Either there is a value, and you can unwrap the optional to access that value, or there isn't a value at all.
 
-// The example used
+// The example below uses the initializer to try to convert a String into an Int:
+
+let possibleNumber = "123"
+let convertedNumber = Int(possibleNumber)
+// convertedNumber is inferred to be of type "Int"? or "optional Int"
