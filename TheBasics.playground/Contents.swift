@@ -147,6 +147,33 @@ let possibleNumber = "123"
 let convertedNumber = Int(possibleNumber)
 // convertedNumber is inferred to be of type "Int"? or "optional Int"
 
-//Nil is
+// You set an optional variable to a valueless state by assigning it the special value nil:
+
+var serverResponseCode: Int? = 404
+// serverResponseCode contains and actual Int value of 404
+serverResponseCode = nil
+// serverResponseCode now contains no value
+
+// If you define an optional variable without providing a default value, the variable is automatically set to nil for you:
+
+var surveyAnswer: String?
+// surveyAnswer is automatically set to nil
+
+// If statements and Forced Unwrapping
+// You can use an if statement to find our whether an optional contains a value by comparing the optional against nil. You perform this comparison with the "equal to" operator (==) or the "not equal tp" operator (!=).
+//If the optional has a value, it's considered to be "not equal to" nil:
+
+if convertedNumber != nil {
+    print("convertedNumber contains some integer value.")
+}
+
+// Prints "convertedNumber contains some integer value."
+
+// OPnce you're sure that the optional does contain a value, you can access it's underlying value by adding an exclamation point(!) to the end of the optional's name. The exclamation point effectively says, "I know that this optional definitely has a value; please use it." This is known as forced unwrapping of the optional's value:
+
+if convertedNumber != nil {
+    print("convertedNumber has an integer value of \(convertedNumber!).")
+}
+
 
 
